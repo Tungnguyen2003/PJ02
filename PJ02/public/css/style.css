@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Tạo background và căn giữa */
+body {
+    background: #1abc9c;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+/* Container lớn hơn, dài sang 2 bên */
+.container {
+    max-width: 700px;  /* Tăng chiều rộng hộp */
+    width: 100%;
+    padding: 0 40px;   /* Thêm padding để khoảng cách không bị dồn */
+}
+
+/* Wrapper với bo tròn và bóng mềm mại */
+.wrapper {
+    width: 500px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Tiêu đề hộp */
+.wrapper .tittle {
+    height: 120px;
+    background: #16a085;
+    border-radius: 15px 15px 0 0;
+    color: #fff;
+    font-size: 36px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Nội dung của form */
+.wrapper form {
+    padding: 50px 40px 40px 40px;  /* Tăng padding để nội dung thoáng hơn */
+}
+
+/* Input lớn hơn */
+.wrapper form .row {
+    height: 55px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.wrapper form .row input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    padding-left: 70px;
+    border-radius: 10px;
+    border: 1px solid lightgray;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+form .row input:focus {
+    border-color: #16a085;
+    box-shadow: inset 0px 0px 2px 2px rgba(26, 188, 156, 0.25);
+}
+
+form .row input::placeholder {
+    color: #999;
+    font-size: 17px;
+}
+
+/* Icon trong input */
+.wrapper form .row i {
+    position: absolute;
+    width: 60px; 
+    height: 100%; 
+    color: #fff; 
+    font-size: 20px;
+    background: #16a085;
+    border: 1px solid #16a085;
+    border-radius: 10px 0 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Đoạn quên mật khẩu */
+.wrapper form .pass {
+    margin: -8px 0 20px 0;
+}
+
+.wrapper form .pass a {
+    color: #16a085;
+    font-size: 17px;
+    text-decoration: none;
+}
+
+.wrapper form .pass a:hover {
+    text-decoration: underline;
+}
+
+/* Nút bấm */
+.wrapper form .button input {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    background: #16a085;
+    border: 1px solid #16a085;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+form .button input:hover {
+    background: #12876f;
+}
+
+/* Link đăng ký */
+.wrapper form .signup-link {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 18px;
+}
+
+.wrapper form .signup-link a {
+    color: #16a085;
+    text-decoration: none;
+}
+
+form .signup-link a:hover {
+    text-decoration: underline;
+}
+
+/* Select box tùy chỉnh */
+.selectbox {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 100%;
+    font-size: 1.15rem;
+    padding: 0.505em 7em 0.405em 1em;
+    background-color: #fff;
+    border: 1px solid #caced1;
+    border-radius: 10px;
+    color: #000;
+    cursor: pointer;
+}
