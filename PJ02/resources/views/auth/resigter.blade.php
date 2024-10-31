@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-Resigter aaaaaaaaa 
-=======
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
@@ -20,10 +17,26 @@ Resigter aaaaaaaaa
                         <i class=" fas far-user"></i>
                         <input type ="text" valua="" placeholder="Username" required name="name">
                     </div>
+                    <div class="row">
+                        <i class=" fas far-user"></i>
+                        <input type ="text" valua="" placeholder="Email" required name="email">
+                    </div>
+                    <div class="row">
+                        <i class=" fas far-user"></i>
+                        <input type ="text" valua="" placeholder="Password" required name="password">
+                    </div>
+                    <div class="row">
+                        <i class=" fas far-user"></i>
+                        <input type ="text" valua="" placeholder="Comfirm Password" required name="comfirm password">
+                    </div>
+                    <div class="pass"> <a href="">Forgot Password</a></div>
+                    <div class="button input-register">
+                        <input type="submit" value="Resigter">
+                    </div>
+                    <div class="signup-link"> Sign In?</div>
             </form>
         </div>
     </div>
 
 </body>
 </html>
->>>>>>> cd7b982 (Update second)
