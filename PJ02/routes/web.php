@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\DashboardController;
 
 // home
 Route::get('',[HomeController::class,'index']);
@@ -23,9 +24,9 @@ Route::get('forgot',[AuthController::class,'forgot']);
 
 //
 Route::group(['middleware' => 'admin'], function(){
-
+    Route::get('admin/dashboard', [DashboardController::class, 'dashboard']);
 });
 
 Route::group(['middleware' => 'user'], function(){
-
+    Route::get('user/dashboard', [DashboardController::class, 'dashboard']);
 });

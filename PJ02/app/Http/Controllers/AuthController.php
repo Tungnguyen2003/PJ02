@@ -52,8 +52,7 @@ class AuthController extends Controller
             }
             else if (Auth::User()->is_role == '0')
             {
-                echo "User"; die();
-                //return redirect()-> intended('user/dashboard');
+                return redirect()-> intended('user/dashboard');
             }
             else
             {
