@@ -10,7 +10,7 @@
 </head>
 <body>
     <div class="container">
-        <!-- Hiển thị lỗi nếu có -->
+
         <span style="color: red;">{{ $errors->first('email') }}<br></span>
         <span style="color: red;">{{ $errors->first('password') }}<br></span>
         <span style="color: red;">{{ $errors->first('password_confirmation') }}<br></span>
@@ -18,7 +18,7 @@
 
         <div class="wrapper">
             <div class="tittle"><span> Resigter Page </span></div>
-            <!-- Form đăng ký -->
+
             <form action="{{ url('resigter_post') }}" method="post">
                 {{ csrf_field() }}
 
