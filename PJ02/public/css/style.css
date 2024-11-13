@@ -21,7 +21,7 @@ body {
 .container {
     max-width: 700px;  /* Tăng chiều rộng hộp */
     width: 100%;
-    padding: 0 40px;   /* Thêm padding để khoảng cách không bị dồn */
+    padding: 0 90px;   /* Thêm padding để khoảng cách không bị dồn */
 }
 
 /* Wrapper với bo tròn và bóng mềm mại */
@@ -35,7 +35,7 @@ body {
 /* Tiêu đề hộp */
 .wrapper .tittle {
     height: 120px;
-    background: #16a085;
+    background: #7ed4ad;
     border-radius: 15px 15px 0 0;
     color: #fff;
     font-size: 36px;
@@ -73,7 +73,7 @@ body {
 }
 
 form .row input:focus {
-    border-color: #16a085;
+    border-color: #7ed4ad;
     box-shadow: inset 0px 0px 2px 2px rgba(26, 188, 156, 0.25);
 }
 
@@ -89,8 +89,8 @@ form .row input::placeholder {
     height: 100%; 
     color: #fff; 
     font-size: 20px;
-    background: #16a085;
-    border: 1px solid #16a085;
+    background: #7ed4ad;
+    border: 1px solid #7ed4ad;
     border-radius: 10px 0 0 10px;
     display: flex;
     align-items: center;
@@ -103,7 +103,7 @@ form .row input::placeholder {
 }
 
 .wrapper form .pass a {
-    color: #16a085;
+    color: #7ed4ad;
     font-size: 17px;
     text-decoration: none;
 }
@@ -117,15 +117,15 @@ form .row input::placeholder {
     color: #fff;
     font-size: 20px;
     font-weight: 500;
-    background: #16a085;
-    border: 1px solid #16a085;
+    background: #7ed4ad;
+    border: 1px solid #7ed4ad;
     border-radius: 10px;
     cursor: pointer;
     transition: background 0.3s;
 }
 
 form .button input:hover {
-    background: #12876f;
+    background: #7ed4ad;
 }
 
 /* Link đăng ký */
@@ -136,7 +136,7 @@ form .button input:hover {
 }
 
 .wrapper form .signup-link a {
-    color: #16a085;
+    color: #7ed4ad;
     text-decoration: none;
 }
 
@@ -144,17 +144,4 @@ form .signup-link a:hover {
     text-decoration: underline;
 }
 
-/* Select box tùy chỉnh */
-.selectbox {
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    width: 100%;
-    font-size: 1.15rem;
-    padding: 0.505em 7em 0.405em 1em;
-    background-color: #fff;
-    border: 1px solid #caced1;
-    border-radius: 10px;
-    color: #000;
-    cursor: pointer;
-}
+

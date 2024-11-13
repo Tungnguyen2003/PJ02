@@ -15,7 +15,7 @@
         <div class="wrapper">
             <div class="tittle"><span> Welcome Page </span></div>
             <form>
-                <div class="signup-link"> Sign In? <a href=""> Login </a></div>
+                <div class="signup-link"> Sign In? <a href="{{ url('login') }}"> Login </a></div>
                 <div class="signup-link"> Join Now? <a href="{{ url('resigter' ) }}"> Resigter </a></div>
         </div>
     </div>
