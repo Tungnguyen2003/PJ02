@@ -32,6 +32,7 @@
     <!--===============================================================================================-->
     <link rel="stylesheet" type="text/css" href="{{ asset("css/util.css") }}">
     <link rel="stylesheet" type="text/css" href="{{ asset("css/main.css") }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset("css/user/user.css") }}">
     <!--===============================================================================================-->
 </head>
 <body class="animsition">
@@ -50,7 +51,7 @@
             </div>
 
             <span class="topbar-child1">
-				
+					Free shipping for standard order over $100
 				</span>
 
             <div class="topbar-child2">
@@ -70,7 +71,7 @@
         <div class="wrap_header">
             <!-- Logo -->
             <a href="index.html" class="logo">
-                <img src="{{ asset("images/icons/logo.png") }}" alt="IMG-LOGO">
+                <img src="{{ asset("images/icons/t8q85dfx.png") }}" alt="IMG-LOGO">
             </a>
 
             <!-- Menu -->
@@ -79,11 +80,6 @@
                     <ul class="main_menu">
                         <li>
                             <a href="{{ route("home.index") }}">Home</a>
-                            <ul class="sub_menu">
-                                <li><a href="index.html">Homepage V1</a></li>
-                                <li><a href="home-02.html">Homepage V2</a></li>
-                                <li><a href="home-03.html">Homepage V3</a></li>
-                            </ul>
                         </li>
 
                         <li>
@@ -121,62 +117,20 @@
                     <div class="header-cart header-dropdown">
                         <ul class="header-cart-wrapitem">
                             <li class="header-cart-item">
-                                <div class="header-cart-item-img">
-                                    <img src="images/item-cart-01.jpg" alt="IMG">
-                                </div>
-
                                 <div class="header-cart-item-txt">
-                                    <a href="#" class="header-cart-item-name">
-                                        White Shirt With Pleat Detail Back
+                                    <a href="{{ route("customer.order") }}" class="header-cart-item-name">
+                                        Quản lý đơn hàng
                                     </a>
-
-                                    <span class="header-cart-item-info">
-											1 x $19.00
-										</span>
-                                </div>
-                            </li>
-
-                            <li class="header-cart-item">
-                                <div class="header-cart-item-img">
-                                    <img src="images/item-cart-02.jpg" alt="IMG">
-                                </div>
-
-                                <div class="header-cart-item-txt">
-                                    <a href="#" class="header-cart-item-name">
-                                        Converse All Star Hi Black Canvas
-                                    </a>
-
-                                    <span class="header-cart-item-info">
-											1 x $39.00
-										</span>
-                                </div>
-                            </li>
-
-                            <li class="header-cart-item">
-                                <div class="header-cart-item-img">
-                                    <img src="images/item-cart-03.jpg" alt="IMG">
-                                </div>
-
-                                <div class="header-cart-item-txt">
-                                    <a href="#" class="header-cart-item-name">
-                                        Nixon Porter Leather Watch In Tan
-                                    </a>
-
-                                    <span class="header-cart-item-info">
-											1 x $17.00
-										</span>
                                 </div>
                             </li>
                         </ul>
 
-                        <div class="header-cart-total">
-                            Total: $75.00
-                        </div>
+                        <div class="header-cart-total"></div>
 
                         <div class="header-cart-buttons justify-content-end">
                             <div class="header-cart-wrapbtn">
                                 <!-- Button -->
-                                <a href="" class="flex-c-m size1 bg1 bo-rad-20 hov1 s-text1 trans-0-4 pull-right">
+                                <a href="{{ route("customer.logout") }}" class="flex-c-m size1 bg1 bo-rad-20 hov1 s-text1 trans-0-4 pull-right">
                                     Đăng xuất
                                 </a>
                             </div>
@@ -184,21 +138,20 @@
                     </div>
                 </div>
                 @else
-                <!-- them route -->
-                    <a href="" class="header-wrapicon1 dis-block">Đăng nhập</a>
+                    <a href="{{ route("customer.login") }}" class="header-wrapicon1 dis-block">Đăng nhập</a>
                     <span class="linedivide1"></span>
-                    <a href="" class="header-wrapicon1 dis-block">Đăng ký</a>
+                    <a href="{{ route("customer.register") }}" class="header-wrapicon1 dis-block">Đăng ký</a>
                 @endif
 
                 <span class="linedivide1"></span>
 
                 <div class="header-wrapicon2">
-{{--                    @php $count = 0; @endphp--}}
+                   @php $count = 0; @endphp
                     <img src="{{ asset("images/icons/icon-header-02.png") }}" class="header-icon1 js-show-header-dropdown" alt="ICON">
-                    <span class="header-icons-noti">0</span>
+                    <span class="header-icons-noti">{{ $count }}</span>
 
                     <!-- Header cart noti -->
-                    <form method="post" action="">
+                    <form method="post" action="{{ route("cart.checkout") }}">
                         @csrf
                         <div class="header-cart header-dropdown">
                             <ul class="header-cart-wrapitem">
@@ -220,14 +173,14 @@
                                             </span>
                                         </div>
                                     </li>
-        {{--                            @php $count += $product["quantity"] @endphp--}}
+                                    @php $count += $product["quantity"] @endphp
                                     @php $total += $product["quantity"] * $product["Price"] @endphp
                                     @endforeach
                                 @endif
                             </ul>
 
                             <div class="header-cart-total">
-    {{--                            Total of quantity: {{ $count }}--}}
+                                Total of quantity: {{ $count }}
                                 Total: @if(session("cart") != null) {{ number_format($total+50000) }} @endif VND
                             </div>
 
@@ -257,7 +210,7 @@
     <div class="wrap_header_mobile">
         <!-- Logo moblie -->
         <a href="index.html" class="logo-mobile">
-            <img src="images/icons/logo.png" alt="IMG-LOGO">
+            <img src="images/icons/t8q85dfx.png" alt="IMG-LOGO">
         </a>
 
         <!-- Button show menu -->
@@ -370,7 +323,7 @@
                 <li class="item-topbar-mobile p-l-20 p-t-8 p-b-8">
                     <div class="topbar-child2-mobile">
 							<span class="topbar-email">
-								khangyhh0301@gmail.com
+								fashe@example.com
 							</span>
 
                         <div class="topbar-language rs1-select2">

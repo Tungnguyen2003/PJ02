@@ -1,0 +1,12 @@
+.bg-title-page{
+    background-image: url(http://127.0.0.1:8000/images/caulong.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.item-slick1{
+    background-image: url(http://127.0.0.1:8000/images/caulong.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

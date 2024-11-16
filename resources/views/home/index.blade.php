@@ -1,16 +1,17 @@
 @extends("layout.main")
 @section("main")
-<section class="slide1">
+    <!-- Slide1 -->
+    <section class="slide1">
         <div class="wrap-slick1">
             <div class="slick1">
-                <div class="item-slick1 item1-slick1" style="background-image: url({{ asset("images/master-slide-02.jpg") }});">
+                <div class="item-slick1 item1-slick1" style="background-image: url({{ asset("images/caulong2.jpg") }});">
                     <div class="wrap-content-slide1 sizefull flex-col-c-m p-l-15 p-r-15 p-t-150 p-b-170">
 						<span class="caption1-slide1 m-text1 t-center animated visible-false m-b-15" data-appear="fadeInDown">
-							Women Collection 2018
+							Badminton
 						</span>
 
                         <h2 class="caption2-slide1 xl-text1 t-center animated visible-false m-b-37" data-appear="fadeInUp">
-                            New arrivals
+                            PKT-SHOP
                         </h2>
 
                         <div class="wrap-btn-slide1 w-size1 animated visible-false" data-appear="zoomIn">
@@ -22,14 +23,14 @@
                     </div>
                 </div>
 
-                <div class="item-slick1 item2-slick1" style="background-image: url({{ asset("images/master-slide-03.jpg") }});">
+                <div class="item-slick1 item2-slick1" style="background-image: url({{ asset("images/caulong3.jpg") }});">
                     <div class="wrap-content-slide1 sizefull flex-col-c-m p-l-15 p-r-15 p-t-150 p-b-170">
 						<span class="caption1-slide1 m-text1 t-center animated visible-false m-b-15" data-appear="rollIn">
-							Women Collection 2018
+                            Badminton
 						</span>
 
                         <h2 class="caption2-slide1 xl-text1 t-center animated visible-false m-b-37" data-appear="lightSpeedIn">
-                            New arrivals
+                            PKT-SHOP
                         </h2>
 
                         <div class="wrap-btn-slide1 w-size1 animated visible-false" data-appear="slideInUp">
@@ -41,14 +42,14 @@
                     </div>
                 </div>
 
-                <div class="item-slick1 item3-slick1" style="background-image: url({{ asset("images/master-slide-04.jpg") }});">
+                <div class="item-slick1 item3-slick1" style="background-image: url({{ asset("images/caulong4.jpg") }});">
                     <div class="wrap-content-slide1 sizefull flex-col-c-m p-l-15 p-r-15 p-t-150 p-b-170">
 						<span class="caption1-slide1 m-text1 t-center animated visible-false m-b-15" data-appear="rotateInDownLeft">
-							Women Collection 2018
+							Badminton
 						</span>
 
                         <h2 class="caption2-slide1 xl-text1 t-center animated visible-false m-b-37" data-appear="rotateInUpRight">
-                            New arrivals
+                            PKT-SHOP
                         </h2>
 
                         <div class="wrap-btn-slide1 w-size1 animated visible-false" data-appear="rotateIn">
@@ -784,5 +785,5 @@
 				</span>
             </div>
         </div>
-    </section> 
+    </section>
 @endsection

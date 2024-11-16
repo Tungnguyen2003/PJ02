@@ -51,7 +51,7 @@
                                 </td>
                                 <td class="column-5">{{ number_format($product["quantity"] * $product["Price"]) }} VND</td>
                                 <td class="column-6">
-                                    <a href="" class="btn btn-danger">x</a>
+                                    <a href="{{ route("cart.delete", ["code" => $product["ProductCode"]]) }}" class="btn btn-danger">x</a>
                                 </td>
                             </tr>
                             @php $total += $product["quantity"] * $product["Price"]; @endphp
@@ -84,14 +84,14 @@
 
                 <div class="size10 trans-0-4 m-t-10 m-b-10">
                     <!-- Button -->
-                    <a href="" class="flex-c-m sizefull bg1 bo-rad-23 hov1 s-text1 trans-0-4">
+                    <a href="{{ route("cart.delete_all") }}" class="flex-c-m sizefull bg1 bo-rad-23 hov1 s-text1 trans-0-4">
                         Delete Cart
                     </a>
                 </div>
             </div>
 
             <!-- Total -->
-            <form method="post" action="">
+            <form method="post" action="{{ route("cart.checkout") }}">
                 @csrf
                 <div class="bo9 w-size18 p-l-40 p-r-40 p-t-30 p-b-38 m-t-30 m-r-0 m-l-auto p-lr-15-sm">
                     <h5 class="m-text20 p-b-24">
