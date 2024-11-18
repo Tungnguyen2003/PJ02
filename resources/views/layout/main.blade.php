@@ -51,7 +51,6 @@
             </div>
 
             <span class="topbar-child1">
-					Free shipping for standard order over $100
 				</span>
 
             <div class="topbar-child2">
@@ -62,7 +61,7 @@
                 <div class="topbar-language rs1-select2">
                     <select class="selection-1" name="time">
                         <option>USD</option>
-                        <option>EUR</option>
+                        <option>VND</option>
                     </select>
                 </div>
             </div>

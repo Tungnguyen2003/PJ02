@@ -10,3 +10,6 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+.logo-mobile img {
+    max-height: 100px;
+}
